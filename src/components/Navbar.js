@@ -2,11 +2,11 @@
 //کامپوننت Navbar
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SearchBox from '../SearchBox';
+import SearchBox from './SearchBox';
 import logo from '../../src/img/logo.png';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
-
+import  '../fonts/index.css' ;
 class Navbar extends Component {
     render() {
         return (
@@ -26,6 +26,20 @@ class Navbar extends Component {
                             </span>
                         </ButtonContainer>
                     </Link>
+                    <Link to='/' className='ml-auto'>
+                        <ButtonContainer>
+                            <span className='mr-2'>
+                                <i className='fas fa-user'> ورود/ثبت نام </i>
+                            </span>
+                        </ButtonContainer>
+                    </Link>
+                    <Link to='/' className='ml-auto'>
+                        <ButtonContainer>
+                            <span className='mr-2'>
+                                <i className='fas fa-stream'> دسته بندی </i>
+                            </span>
+                        </ButtonContainer>
+                    </Link>
                 </ul>
 
 
@@ -40,7 +54,8 @@ const NavWrapper = styled.nav`
           background: var(--mainBlue);
   .nav-link{
                 color: var(--mainWhite) !important;
-                fontSize:1.3rem;
+                font-size:1.3rem;
                 text-transform:capitalize;
+                font-family:'IRANSansMobile';
             }
 `;

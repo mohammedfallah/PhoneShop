@@ -1,10 +1,11 @@
 //CartColumns کامپوننت 
 
 import React, { Component } from 'react'
-
+import styled from 'styled-components'
 export default function CartColumns() {
 
     return (
+        <CartColumnsWrapper>
         <div className='container-fluid text-center d-none 
         d-lg-block' >
             <div className='row'>
@@ -28,6 +29,12 @@ export default function CartColumns() {
                 </div>
             </div>
         </div>
+        </CartColumnsWrapper>
     )
 
 }
+
+
+const CartColumnsWrapper = styled.div`
+   font-family:'IRANSansMobile';
+`

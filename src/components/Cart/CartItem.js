@@ -2,12 +2,15 @@
 
 
 import React from 'react'
+import styled from 'styled-components'
+
 export default function CartItem({ item, value }) {
     // data ایمپورت کردن  آیتم های زیر از فایل     
     const { id, title, img, price, total, count } = item;
     // context ایمپورت کردن  آیتم های زیر از فایل 
     const { increment, decrement, removeItem } = value;
     return (
+        <CartItemWrapper>
         <div className='row my-1 text-capitalize text-center'>
             <div className='col-10 mx-auto col-lg-2'>
                 <img
@@ -44,6 +47,10 @@ export default function CartItem({ item, value }) {
 
             </div>
         </div>
+        </CartItemWrapper>
     )
 }
 
+const CartItemWrapper = styled.div`
+   font-family:'IRANSansMobile' ;
+`

@@ -7,9 +7,11 @@ import EmptyCart from './EmptyCart';
 import { ProductConsumer } from '../../context';
 import CartList from './CartList';
 import CartTotals from './CartTotals';
+import styled from 'styled-components'
 export default class Cart extends Component {
   render() {
     return (
+      <CartWrapper>
       <section>
         <ProductConsumer>
           {value => {
@@ -29,6 +31,11 @@ export default class Cart extends Component {
           }}
         </ProductConsumer>
       </section>
+      </CartWrapper>
     )
   }
 }
+
+const CartWrapper = styled.section`
+   font-family:'IRANSansMobile';
+`

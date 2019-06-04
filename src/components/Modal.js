@@ -59,7 +59,10 @@ background:rgba(0,0,0,0.3);
 display:flex;
 align-items:center;
 justify-content:center;
+font-family:'IRANSansMobile';
+
 #modal{
     background: var(--mainWhite);
+    font-family:'IRANSansMobile';
 }
 `
