@@ -6,6 +6,7 @@ import SearchBox from '../SearchBox';
 import logo from '../../src/img/logo.png';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
+
 class Navbar extends Component {
     render() {
         return (
