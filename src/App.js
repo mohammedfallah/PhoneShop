@@ -8,7 +8,8 @@ import Details from './components/Details' ;
 import Cart from './components/Cart/Cart' ;
 import Default from './components/Default' ;
 import Modal from './components/Modal' ;
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import Login from './components/Login' ;
 function App() {
   return (
   /* React.Fragment استفاده از */
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' component={ProductList} />
           <Route path='/details' component={Details} />
           <Route path='/cart' component={Cart} />
+          <Route path='/login' component={Login} />
           <Route  component={Default} />
         </Switch>
         <Modal />

@@ -26,7 +26,7 @@ class Navbar extends Component {
                             </span>
                         </ButtonContainer>
                     </Link>
-                    <Link to='/' className='ml-auto'>
+                    <Link to='/login' className='ml-auto'>
                         <ButtonContainer>
                             <span className='mr-2'>
                                 <i className='fas fa-user'> ورود/ثبت نام </i>
