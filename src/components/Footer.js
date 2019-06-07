@@ -11,7 +11,7 @@ class Footer extends Component {
       <footer>
         <ul className="site-links">
           <li>
-          <i className="fas fa-mobile-android-alt">+98916262307</i>
+          <i className="fas fa-mobile"> 98916262307</i>
             &copy; {this.state.year} M.H.Fallah
             
           </li>
