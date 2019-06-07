@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "bootstrap-rtl": "^3.3.4",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
@@ -13,7 +12,6 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8",
     "react-slick": "^0.24.0",
-    "react-swipe": "^6.0.4",
     "styled-components": "^4.2.0",
     "swipe-js-iso": "^2.1.5"
   },
