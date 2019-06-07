@@ -10,6 +10,7 @@ import Default from './components/Default' ;
 import Modal from './components/Modal' ;
 import Footer from './components/Footer';
 import Login from './components/Login' ;
+import ForgotPassword from './components/ForgotPassword' ;
 function App() {
   return (
   /* React.Fragment استفاده از */
@@ -20,6 +21,7 @@ function App() {
           <Route path='/details' component={Details} />
           <Route path='/cart' component={Cart} />
           <Route path='/login' component={Login} />
+          <Route path='/forgotpassword' component={ForgotPassword} />
           <Route  component={Default} />
         </Switch>
         <Modal />

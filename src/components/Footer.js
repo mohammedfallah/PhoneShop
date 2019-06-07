@@ -1,18 +1,22 @@
-import React, { Component } from "react";
-import styled from 'styled-components'
-export default class Footer extends Component {
+import React, { Component } from 'react';
+
+class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { year: new Date().getFullYear() };
+  }
+
   render() {
     return (
-      <FooterWrapper>
-        <div>
-          <h4>Created By M.H.Fallah @2019 mohammedfalla838@gmail.com</h4>
-          <hr />
-        </div>
-      </FooterWrapper>
+      <footer>
+        <ul className="site-links">
+          <li>
+            &copy; {this.state.year} M.H.Fallah
+          </li>
+        </ul>
+      </footer>
     );
   }
 }
 
-const FooterWrapper = styled.div`
-  justify-content: "right";
-`;
+export default Footer;
