@@ -11,7 +11,6 @@ import Modal from './components/Modal' ;
 import Footer from './components/Footer';
 import Login from './components/Login' ;
 import ForgotPassword from './components/ForgotPassword' ;
-import Carousel from './components/Carousel' ;
 
 
 
@@ -28,7 +27,6 @@ function App() {
           <Route path='/cart' component={Cart} />
           <Route path='/login' component={Login} />
           <Route path='/forgotpassword' component={ForgotPassword} />
-          <Route path='/carousel' component={Carousel} />
           <Route  component={Default} />
         </Switch>
         <Modal />
